@@ -7,8 +7,8 @@ module.exports = async function getHouseCanaryData () {
     try {
         const response = await axios.get(`https://api.housecanary.com/v2/${ENDPOINT}?${IDENTIFIERS}`, {
           auth: {
-            username: 'test_YYI3X9CY6NV23H6DU70O',
-            password: 'ryabhMVxkdq8uFVsYpJ6oMUHzBc5zf0f'
+            username: process.env.HC_API_KEY,
+            password: process.env.HC_API_SECRET,
           }
         });
         console.log(response.data[0]['property/value']['result'])

@@ -1,8 +1,8 @@
 const axios = require("axios");
 
 const ENDPOINT = "property/value";
-//const address = "87 Misty Forest Dr";
-//const zipcode = "36869";
+const address = "87 Misty Forest Dr";
+const zipcode = "36869";
 
 
 module.exports = async function getHouseCanaryData (address, zipcode) {

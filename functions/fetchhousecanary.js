@@ -1,11 +1,11 @@
 const axios = require("axios");
 
 const ENDPOINT = "property/value";
-const address = "87+Misty+Forest+Dr";
-const zipcode = "36869";
+//const address = "87+Misty+Forest+Dr";
+//const zipcode = "36869";
 
 
-module.exports = async function getHouseCanaryData () {
+module.exports = async function getHouseCanaryData (address, zipcode) {
     try {
         const response = await axios.get(`https://api.housecanary.com/v2/${ENDPOINT}?address=${address}&zipcode=${zipcode}`, {
           auth: {

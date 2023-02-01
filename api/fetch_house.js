@@ -10,7 +10,7 @@ recordRoutes.route("/api/boiler").get(async function (req, res) {
     const zipcode = "36869";
 
     try {
-        const r = await getHouseCanaryData();
+        const r = await getHouseCanaryData(address, zipcode);
         console.log(r)
         res.send({r});
     } catch (e) {

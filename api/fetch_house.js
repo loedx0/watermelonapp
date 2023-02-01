@@ -6,8 +6,8 @@ recordRoutes.route("/api/boiler").get(async function (req, res) {
 
     //const address = req.query.address;
     //const zipcode = req.query.zipcode;
-    const address = "87 Misty Forest Dr";
-    const zipcode = "36869";
+    const address = "517 N Chugach St";
+    const zipcode = "99645";
 
     try {
         const r = await getHouseCanaryData(address, zipcode);

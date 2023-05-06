@@ -3,7 +3,7 @@ const app = express();
 require("dotenv").config({path: "./config.env"});
 const cors = require('cors');
 app.use(cors({
-  origin: 'https://home-housecanary.replit.app/'
+  origin: 'https://home-housecanary.replit.app'
 }));
 
 app.use(require('./api/fetch_house'))
